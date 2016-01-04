@@ -1,0 +1,1 @@
+{"head":"","body":"","js":"\nTemplate.__checkName(\"MasterLayout\");\nTemplate[\"MasterLayout\"] = new Template(\"Template.MasterLayout\", (function() {\n  var view = this;\n  return Spacebars.include(view.lookupTemplate(\"yield\"));\n}));\n","bodyAttrs":{}}
