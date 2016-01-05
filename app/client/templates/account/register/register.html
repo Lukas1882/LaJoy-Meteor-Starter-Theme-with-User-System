@@ -1,12 +1,12 @@
 <template name="register">
     <div class="ui container">
-        <div class="ui three column grid" style="padding-top:170px">
+        <div class="ui three column grid" style="padding-top:140px">
             <div class="four wide column"></div>
             <div class="eight wide column">
 
                 <div class="column">
                     <h2 class="ui teal image header">
-                        <img src="assets/images/logo.png" class="image">
+                        <img src="images/logo.png" class="image">
                         <div class="content">
                             Sign-up your LaJoy account
                         </div>
@@ -16,9 +16,11 @@
                             <div class="field">
                                 <div class="ui left icon input">
                                     <i class="smile icon"></i>
-                                    <input type="text" name="email" placeholder="Username">
+                                    <input type="text" name="name" placeholder="Username">
                                 </div>
                             </div>
+
+
 
                             <div class="field">
                                 <div class="ui left icon input">
@@ -35,7 +37,14 @@
                             <div class="field">
                                 <div class="ui left icon input">
                                     <i class="lock icon"></i>
-                                    <input type="password" name="password" placeholder="Confirm Password">
+                                    <input type="password" name="repassword" placeholder="Confirm Password">
+                                </div>
+                            </div>
+
+                            <div class="inline field">
+                                <div class="ui checkbox">
+                                    <input type="checkbox" name="terms">
+                                    <label>I agree to the terms and conditions</label>
                                 </div>
                             </div>
                             <div class="ui fluid large primary submit button">Sign Up</div>

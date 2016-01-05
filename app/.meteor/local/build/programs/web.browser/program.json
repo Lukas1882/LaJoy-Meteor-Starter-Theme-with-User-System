@@ -664,11 +664,11 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/app/client/templates/account/register/template.register.js?b1748f767654aeae44e6b002862323b5d02369fe",
+      "url": "/app/client/templates/account/register/template.register.js?1524df94ca652acdc374f8b7d4aa013b896e9bd6",
       "sourceMap": "app/client/templates/account/register/template.register.js.map",
-      "sourceMapUrl": "/app/client/templates/account/register/b1748f767654aeae44e6b002862323b5d02369fe.map",
-      "size": 2677,
-      "hash": "b1748f767654aeae44e6b002862323b5d02369fe"
+      "sourceMapUrl": "/app/client/templates/account/register/1524df94ca652acdc374f8b7d4aa013b896e9bd6.map",
+      "size": 3030,
+      "hash": "1524df94ca652acdc374f8b7d4aa013b896e9bd6"
     },
     {
       "path": "app/client/templates/layouts/master_layout/template.master_layout.js",
@@ -1001,6 +1001,17 @@
       "hash": "38011ffddbfffd8648494c0e41d10adb3727cbfc"
     },
     {
+      "path": "app/client/templates/account/register/register.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/app/client/templates/account/register/register.js?c5fcdbe9c72642f28e458368e5be7e9c7285ae37",
+      "sourceMap": "app/client/templates/account/register/register.js.map",
+      "sourceMapUrl": "/app/client/templates/account/register/c5fcdbe9c72642f28e458368e5be7e9c7285ae37.map",
+      "size": 3967,
+      "hash": "c5fcdbe9c72642f28e458368e5be7e9c7285ae37"
+    },
+    {
       "path": "app/client/templates/layouts/master_layout/master_layout.js",
       "where": "client",
       "type": "js",
@@ -1041,6 +1052,15 @@
       "url": "/.gitkeep",
       "size": 1,
       "hash": "adc83b19e793491b1c6ea0fd8b46cd9f32e592fc"
+    },
+    {
+      "path": "app/images/logo.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/images/logo.png",
+      "size": 28674,
+      "hash": "4e59e631a84ff3a065e8baa6fd21bef5ea5c3156"
     },
     {
       "path": "app/lib/semantic-ui/src/themes/default/assets/fonts/icons.eot",
