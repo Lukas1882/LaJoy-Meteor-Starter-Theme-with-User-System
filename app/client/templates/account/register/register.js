@@ -1,6 +1,59 @@
 
+Template.register.events({
+    "submit #form": function (event) {
+        // Prevent default browser form submit
+        event.preventDefault();
+
+        // Get value from form element
+        var name = event.target.name.value;
+        var email = event.target.email.value;
+        var password = event.target.password.value;
 
 
+        Meteor.call('isEmailExist',email, function(error, result){
+            alert(error);
+            if (error){
+                swal("Sorry", "We have system problem", "error");
+                return;
+            } else {
+                // if this name is valid
+                if(!result){
+                    swal("Sorry", "This email has been used, please login directly", "error");
+                    // 跳转登陆
+                    return;
+                }
+            }
+        });
+
+
+        try {
+            Accounts.createUser({
+                username: name,
+                email: email,
+                password: password
+            });
+        } catch(e){
+            alert(e);
+            return;
+        }
+        swal("Success!","Thanks for your register. We have send one email to your email \""+ email +"\" please verify your email address first.","success");
+
+        swal({
+                title: "Success!",
+                text: "Thanks for your register. We have send one email to your email \""+ email +"\" please verify your email address first.",
+                type: "success",
+                confirmButtonColor: "#50E1AE",
+                confirmButtonText: "OK!",
+                closeOnConfirm: false,
+            },
+            function(isConfirm){
+                window.location = "/";
+            });
+
+
+
+    }
+});
 Template.register.onRendered(function () {
     $('.ui.form')
         .form({

@@ -2,7 +2,7 @@
 Template.__checkName("MasterLayout");
 Template["MasterLayout"] = new Template("Template.MasterLayout", (function() {
   var view = this;
-  return Spacebars.include(view.lookupTemplate("yield"));
+  return [ Spacebars.include(view.lookupTemplate("loginButtons")), "\n  ", Spacebars.include(view.lookupTemplate("yield")) ];
 }));
 
 }).call(this);

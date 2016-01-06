@@ -9,6 +9,8 @@ parseInt = Package['es5-shim'].parseInt;
 ECMAScript = Package.ecmascript.ECMAScript;
 Router = Package['iron:router'].Router;
 RouteController = Package['iron:router'].RouteController;
+check = Package.check.check;
+Match = Package.check.Match;
 Meteor = Package.meteor.Meteor;
 WebApp = Package.webapp.WebApp;
 main = Package.webapp.main;
@@ -27,6 +29,8 @@ Map = Package['ecmascript-runtime'].Map;
 Set = Package['ecmascript-runtime'].Set;
 Promise = Package.promise.Promise;
 Iron = Package['iron:core'].Iron;
+Accounts = Package['accounts-base'].Accounts;
+AccountsServer = Package['accounts-base'].AccountsServer;
 Autoupdate = Package.autoupdate.Autoupdate;
 HTML = Package.htmljs.HTML;
 

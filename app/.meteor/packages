@@ -21,3 +21,8 @@ insecure                # Allow all DB writes from clients (for prototyping)
 iron:router
 semantic:ui
 flemay:less-autoprefixer
+kevohagan:sweetalert
+accounts-password
+accounts-ui
+msavin:mongol
+check

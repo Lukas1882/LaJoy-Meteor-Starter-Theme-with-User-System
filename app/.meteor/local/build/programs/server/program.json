@@ -1,6 +1,6 @@
 {
   "format": "javascript-image-pre1",
-  "arch": "os",
+  "arch": "os.osx.x86_64",
   "load": [
     {
       "node_modules": "npm/es5-shim/node_modules",
@@ -108,6 +108,14 @@
       "node_modules": "npm/ddp-client/node_modules",
       "sourceMap": "packages/ddp-client.js.map",
       "path": "packages/ddp-client.js"
+    },
+    {
+      "sourceMap": "packages/rate-limit.js.map",
+      "path": "packages/rate-limit.js"
+    },
+    {
+      "sourceMap": "packages/ddp-rate-limiter.js.map",
+      "path": "packages/ddp-rate-limiter.js"
     },
     {
       "node_modules": "npm/logging/node_modules",
@@ -271,6 +279,56 @@
       "path": "packages/flemay_less-autoprefixer.js"
     },
     {
+      "sourceMap": "packages/kevohagan_sweetalert.js.map",
+      "path": "packages/kevohagan_sweetalert.js"
+    },
+    {
+      "node_modules": "npm/npm-bcrypt/node_modules",
+      "sourceMap": "packages/npm-bcrypt.js.map",
+      "path": "packages/npm-bcrypt.js"
+    },
+    {
+      "sourceMap": "packages/accounts-base.js.map",
+      "path": "packages/accounts-base.js"
+    },
+    {
+      "sourceMap": "packages/sha.js.map",
+      "path": "packages/sha.js"
+    },
+    {
+      "sourceMap": "packages/srp.js.map",
+      "path": "packages/srp.js"
+    },
+    {
+      "node_modules": "npm/email/node_modules",
+      "sourceMap": "packages/email.js.map",
+      "path": "packages/email.js"
+    },
+    {
+      "sourceMap": "packages/accounts-password.js.map",
+      "path": "packages/accounts-password.js"
+    },
+    {
+      "sourceMap": "packages/accounts-ui.js.map",
+      "path": "packages/accounts-ui.js"
+    },
+    {
+      "sourceMap": "packages/lai_collection-extensions.js.map",
+      "path": "packages/lai_collection-extensions.js"
+    },
+    {
+      "sourceMap": "packages/dburles_mongo-collection-instances.js.map",
+      "path": "packages/dburles_mongo-collection-instances.js"
+    },
+    {
+      "sourceMap": "packages/meteortoys_toykit.js.map",
+      "path": "packages/meteortoys_toykit.js"
+    },
+    {
+      "sourceMap": "packages/msavin_mongol.js.map",
+      "path": "packages/msavin_mongol.js"
+    },
+    {
       "sourceMap": "packages/livedata.js.map",
       "path": "packages/livedata.js"
     },
@@ -315,6 +373,13 @@
       }
     },
     {
+      "sourceMap": "app/server/controllers/account/account.js.map",
+      "path": "app/server/controllers/account/account.js",
+      "assets": {
+        ".gitkeep": "assets/app/.gitkeep"
+      }
+    },
+    {
       "sourceMap": "app/server/bootstrap.js.map",
       "path": "app/server/bootstrap.js",
       "assets": {
@@ -334,6 +399,10 @@
       "assets": {
         ".gitkeep": "assets/app/.gitkeep"
       }
+    },
+    {
+      "sourceMap": "packages/service-configuration.js.map",
+      "path": "packages/service-configuration.js"
     }
   ]
 }
