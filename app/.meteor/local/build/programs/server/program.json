@@ -380,6 +380,13 @@
       }
     },
     {
+      "sourceMap": "app/server/controllers/email/email_controller.js.map",
+      "path": "app/server/controllers/email/email_controller.js",
+      "assets": {
+        ".gitkeep": "assets/app/.gitkeep"
+      }
+    },
+    {
       "sourceMap": "app/server/bootstrap.js.map",
       "path": "app/server/bootstrap.js",
       "assets": {

@@ -11,8 +11,8 @@ Template.register.events({
 
 
         Meteor.call('isEmailExist',email, function(error, result){
-            alert(error);
             if (error){
+                console.log(error);
                 swal("Sorry", "We have system problem", "error");
                 return;
             } else {
@@ -20,38 +20,34 @@ Template.register.events({
                 if(!result){
                     swal("Sorry", "This email has been used, please login directly", "error");
                     // 跳转登陆
-                    return;
+                } else {
+                    try {
+                        Meteor.call('addAccount',name,email,password,function(error, result){
+                            // if created, logim to the new account
+                            if (result == true){
+                                Meteor.loginWithPassword(email, password)
+                                // send confirm email
+                            }
+                        }
+                        );
+                    } catch(e){
+                        console.log(e);
+                        return;
+                    }
+                    swal({
+                            title: "Success!",
+                            text: "Thanks for your register. We have send one email to your email \""+ email +"\" please verify your email address first.",
+                            type: "success",
+                            confirmButtonColor: "#50E1AE",
+                            confirmButtonText: "OK!",
+                            closeOnConfirm: false,
+                        },
+                        function(isConfirm){
+                            window.location = "/";
+                    });
                 }
             }
         });
-
-
-        try {
-            Accounts.createUser({
-                username: name,
-                email: email,
-                password: password
-            });
-        } catch(e){
-            alert(e);
-            return;
-        }
-        swal("Success!","Thanks for your register. We have send one email to your email \""+ email +"\" please verify your email address first.","success");
-
-        swal({
-                title: "Success!",
-                text: "Thanks for your register. We have send one email to your email \""+ email +"\" please verify your email address first.",
-                type: "success",
-                confirmButtonColor: "#50E1AE",
-                confirmButtonText: "OK!",
-                closeOnConfirm: false,
-            },
-            function(isConfirm){
-                window.location = "/";
-            });
-
-
-
     }
 });
 Template.register.onRendered(function () {
@@ -108,7 +104,4 @@ Template.register.onRendered(function () {
                 }
             }
         })
-
-
-
 });

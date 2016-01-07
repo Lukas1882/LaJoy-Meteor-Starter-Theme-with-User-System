@@ -1203,11 +1203,11 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/app/client/templates/account/register/register.js?ee7fedcfca85977b0dbe96f2a22c50c49cdad70e",
+      "url": "/app/client/templates/account/register/register.js?8f423916b3264d09fe54d7e159da8f235b9e38af",
       "sourceMap": "app/client/templates/account/register/register.js.map",
-      "sourceMapUrl": "/app/client/templates/account/register/ee7fedcfca85977b0dbe96f2a22c50c49cdad70e.map",
-      "size": 7788,
-      "hash": "ee7fedcfca85977b0dbe96f2a22c50c49cdad70e"
+      "sourceMapUrl": "/app/client/templates/account/register/8f423916b3264d09fe54d7e159da8f235b9e38af.map",
+      "size": 7661,
+      "hash": "8f423916b3264d09fe54d7e159da8f235b9e38af"
     },
     {
       "path": "app/client/templates/layouts/master_layout/master_layout.js",

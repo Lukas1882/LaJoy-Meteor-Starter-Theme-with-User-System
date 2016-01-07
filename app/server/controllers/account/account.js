@@ -39,7 +39,23 @@ if (Meteor.isServer) {
             } catch (e){
                 throw new Meteor.Error(500, e);
             }
-        }
+        },
 
+
+        addAccount: function (username,email,password) {
+            check(username, String);
+            check(email, String);
+            check(password, String);
+            if (!Meteor.call('isEmailExist',email)) {
+                throw new Meteor.Error(500, 'This email has been used!');
+            } else {
+                Accounts.createUser({
+                    username: username,
+                    email: email,
+                    password: password
+                });
+                return true;
+            }
+        }
     });
 }
