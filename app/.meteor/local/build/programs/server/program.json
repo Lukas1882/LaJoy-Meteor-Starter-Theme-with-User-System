@@ -408,6 +408,13 @@
       }
     },
     {
+      "sourceMap": "app/server/smtp.js.map",
+      "path": "app/server/smtp.js",
+      "assets": {
+        ".gitkeep": "assets/app/.gitkeep"
+      }
+    },
+    {
       "sourceMap": "packages/service-configuration.js.map",
       "path": "packages/service-configuration.js"
     }

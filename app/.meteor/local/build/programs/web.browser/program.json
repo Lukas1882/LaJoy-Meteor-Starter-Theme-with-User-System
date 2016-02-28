@@ -783,6 +783,17 @@
       "hash": "a4d812185bc18a50bf20ced4adcadc6fd0a211e8"
     },
     {
+      "path": "packages/email.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/email.js?b341feff203db3b3721a997c4449cf20fb695094",
+      "sourceMap": "packages/email.js.map",
+      "sourceMapUrl": "/packages/b341feff203db3b3721a997c4449cf20fb695094.map",
+      "size": 762,
+      "hash": "b341feff203db3b3721a997c4449cf20fb695094"
+    },
+    {
       "path": "packages/webapp.js",
       "where": "client",
       "type": "js",
@@ -1203,11 +1214,11 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/app/client/templates/account/register/register.js?8f423916b3264d09fe54d7e159da8f235b9e38af",
+      "url": "/app/client/templates/account/register/register.js?e63200f4733654c65a7183a03ca53e89d223aa43",
       "sourceMap": "app/client/templates/account/register/register.js.map",
-      "sourceMapUrl": "/app/client/templates/account/register/8f423916b3264d09fe54d7e159da8f235b9e38af.map",
-      "size": 7661,
-      "hash": "8f423916b3264d09fe54d7e159da8f235b9e38af"
+      "sourceMapUrl": "/app/client/templates/account/register/e63200f4733654c65a7183a03ca53e89d223aa43.map",
+      "size": 7888,
+      "hash": "e63200f4733654c65a7183a03ca53e89d223aa43"
     },
     {
       "path": "app/client/templates/layouts/master_layout/master_layout.js",

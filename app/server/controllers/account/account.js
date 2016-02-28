@@ -49,11 +49,14 @@ if (Meteor.isServer) {
             if (!Meteor.call('isEmailExist',email)) {
                 throw new Meteor.Error(500, 'This email has been used!');
             } else {
+                // Create the user
                 Accounts.createUser({
                     username: username,
                     email: email,
                     password: password
                 });
+                // Send the Confirmation Email
+                Meteor.call('sendEmail', email, 'test@lyl.com', 'Hello World, '+ username, 'This is a test of Email, Please confirme your email');
                 return true;
             }
         }

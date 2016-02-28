@@ -23,10 +23,11 @@ Template.register.events({
                 } else {
                     try {
                         Meteor.call('addAccount',name,email,password,function(error, result){
-                            // if created, logim to the new account
+                            // if created, login to the new account
                             if (result == true){
                                 Meteor.loginWithPassword(email, password)
                                 // send confirm email
+
                             }
                         }
                         );
@@ -42,6 +43,7 @@ Template.register.events({
                             confirmButtonText: "OK!",
                             closeOnConfirm: false,
                         },
+                        // Redirect to home page.
                         function(isConfirm){
                             window.location = "/";
                     });
@@ -50,6 +52,7 @@ Template.register.events({
         });
     }
 });
+
 Template.register.onRendered(function () {
     $('.ui.form')
         .form({
