@@ -3,15 +3,23 @@
 
 ### Intro
 
-This is a Meteor Starter Theme, also my first Meteor APP.
-User can login and sign up. There is a complete form validation in the web page, with user-friendly and clean UI.
+This is a Meteor Starter Theme, also my first Meteor APP. Developers can consider this theme as a basic starter theme to start their web project.<br />
 
-Developers can consider this theme as a basic starter theme to start their web project.
+User can login and sign up.<br />
+Create complete form validation in the web page. <br />
+Build with Semantic UI,supporting a good UI. Using Meteor JQuery.
 
 ### Installation
 
 Download the files and run "Meteor" at the "app" foler, or you can run at the root folder with "rion". Make sure you also install the [Iron Meteor](https://github.com/iron-meteor) with Meteor.  "app" is the root of the Meteor, the root folder is the root of Iron Meteor.
 When sending email, there will be an exception, since you need to set up your GridSend username and password in "app/server/smtp.js". It is OK you leave the exception there.
+
+### Preview
+![image](https://github.com/leaot/LaJoy-Meteor-Starter-Theme-with-User-System/blob/master/img/home.png)
+
+![image](https://github.com/leaot/LaJoy-Meteor-Starter-Theme-with-User-System/blob/master/img/login.png)
+
+![image](https://github.com/leaot/LaJoy-Meteor-Starter-Theme-with-User-System/blob/master/img/signup.png)
 
 ### Meteor Tools
 You can get the full tool list by running "meteor list" in the "app" folder.<br />
