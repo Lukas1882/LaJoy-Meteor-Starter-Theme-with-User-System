@@ -862,22 +862,22 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/app/client/templates/account/login/template.login.js?2bac0a54b845b1a78f19f92ee40d5e4eb209b9fc",
+      "url": "/app/client/templates/account/login/template.login.js?e594dac6c31916f9f698c36817b09025fb2930dd",
       "sourceMap": "app/client/templates/account/login/template.login.js.map",
-      "sourceMapUrl": "/app/client/templates/account/login/2bac0a54b845b1a78f19f92ee40d5e4eb209b9fc.map",
-      "size": 1941,
-      "hash": "2bac0a54b845b1a78f19f92ee40d5e4eb209b9fc"
+      "sourceMapUrl": "/app/client/templates/account/login/e594dac6c31916f9f698c36817b09025fb2930dd.map",
+      "size": 1951,
+      "hash": "e594dac6c31916f9f698c36817b09025fb2930dd"
     },
     {
       "path": "app/client/templates/account/register/template.register.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/app/client/templates/account/register/template.register.js?c01e7d2d7f28832fb218e8ff1f1c17f0cce1203a",
+      "url": "/app/client/templates/account/register/template.register.js?ce2e7ccd9ddc75d32a954518ab7abd2b401f3409",
       "sourceMap": "app/client/templates/account/register/template.register.js.map",
-      "sourceMapUrl": "/app/client/templates/account/register/c01e7d2d7f28832fb218e8ff1f1c17f0cce1203a.map",
-      "size": 3040,
-      "hash": "c01e7d2d7f28832fb218e8ff1f1c17f0cce1203a"
+      "sourceMapUrl": "/app/client/templates/account/register/ce2e7ccd9ddc75d32a954518ab7abd2b401f3409.map",
+      "size": 3044,
+      "hash": "ce2e7ccd9ddc75d32a954518ab7abd2b401f3409"
     },
     {
       "path": "app/client/templates/layouts/master_layout/template.master_layout.js",
@@ -917,11 +917,11 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/app/client/templates/home/template.home.js?231333ffcc5e85162456bd567a43289c17a266ae",
+      "url": "/app/client/templates/home/template.home.js?eed6d7c4fdd18425a1fe6c3638f822e6c0e1844d",
       "sourceMap": "app/client/templates/home/template.home.js.map",
-      "sourceMapUrl": "/app/client/templates/home/231333ffcc5e85162456bd567a43289c17a266ae.map",
-      "size": 391,
-      "hash": "231333ffcc5e85162456bd567a43289c17a266ae"
+      "sourceMapUrl": "/app/client/templates/home/eed6d7c4fdd18425a1fe6c3638f822e6c0e1844d.map",
+      "size": 1174,
+      "hash": "eed6d7c4fdd18425a1fe6c3638f822e6c0e1844d"
     },
     {
       "path": "app/client/lib/semantic-ui/definitions/behaviors/api.js",
@@ -1210,15 +1210,26 @@
       "hash": "38011ffddbfffd8648494c0e41d10adb3727cbfc"
     },
     {
+      "path": "app/client/templates/account/login/login.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/app/client/templates/account/login/login.js?c057e62b224768bf77c00e675e40db89fbd2fd3f",
+      "sourceMap": "app/client/templates/account/login/login.js.map",
+      "sourceMapUrl": "/app/client/templates/account/login/c057e62b224768bf77c00e675e40db89fbd2fd3f.map",
+      "size": 4140,
+      "hash": "c057e62b224768bf77c00e675e40db89fbd2fd3f"
+    },
+    {
       "path": "app/client/templates/account/register/register.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/app/client/templates/account/register/register.js?e63200f4733654c65a7183a03ca53e89d223aa43",
+      "url": "/app/client/templates/account/register/register.js?9708de5977fcd7172b4768ef134e1b5550f57992",
       "sourceMap": "app/client/templates/account/register/register.js.map",
-      "sourceMapUrl": "/app/client/templates/account/register/e63200f4733654c65a7183a03ca53e89d223aa43.map",
-      "size": 7888,
-      "hash": "e63200f4733654c65a7183a03ca53e89d223aa43"
+      "sourceMapUrl": "/app/client/templates/account/register/9708de5977fcd7172b4768ef134e1b5550f57992.map",
+      "size": 7812,
+      "hash": "9708de5977fcd7172b4768ef134e1b5550f57992"
     },
     {
       "path": "app/client/templates/layouts/master_layout/master_layout.js",
@@ -1261,6 +1272,15 @@
       "url": "/.gitkeep",
       "size": 1,
       "hash": "adc83b19e793491b1c6ea0fd8b46cd9f32e592fc"
+    },
+    {
+      "path": "app/images/logo.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/images/logo.jpg",
+      "size": 61343,
+      "hash": "a04caeb0d6ce4232380e51297b4c2cc955060a84"
     },
     {
       "path": "app/images/logo.png",

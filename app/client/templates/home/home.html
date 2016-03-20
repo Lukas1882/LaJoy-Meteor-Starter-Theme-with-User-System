@@ -1,11 +1,24 @@
 <template name="Home">
-  <div class="home">
-    <h1>Find me in app/client/templates/home/home</h1>
 
-      <button class="ui blue button">Blue</button>
-      <div class="ui download primary button">
-          Download
-      </div>
+    <div class="ui container">
+        <div class="ui one column grid" style="padding-top:50px">
+            <h1>Meteor User-Account Starter</h1>
+        </div>
+        <br>
+        <br>
+        <div class="ui segment">
+            This is a simple Meteor Web-APP Starter, also my first Meteor APP.
+            <br>
+            User can sign-up and login. SendGrid is used to send the confirmation email. You can find more details about the plugins and tools by the "Meteor List", which I included in the README.
+            <br>
+            <br>
+            You may noticed there is a "sign in" plugin at the top right corner. Yes, it is the login plugin from Meteor. I put it there for monitor and debug my own login system. Go ahead and play with it.
+        </div>
+        <br>
+        <br>
+        <button onClick="location.href='register'" class="ui blue button">Sign Up</button>
+        <button onClick="location.href='login'" class="ui green button">Sign in</button>
 
-  </div>
+    </div>
+
 </template>

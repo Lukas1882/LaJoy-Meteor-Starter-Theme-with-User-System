@@ -1,9 +1,8 @@
 
 Template.register.events({
-    "submit #form": function (event) {
+    "submit #registerForm": function (event) {
         // Prevent default browser form submit
         event.preventDefault();
-
         // Get value from form element
         var name = event.target.name.value;
         var email = event.target.email.value;
@@ -25,7 +24,7 @@ Template.register.events({
                         Meteor.call('addAccount',name,email,password,function(error, result){
                             // if created, login to the new account
                             if (result == true){
-                                Meteor.loginWithPassword(email, password)
+                                Meteor.loginWithPassword(email, password);
                                 // send confirm email
 
                             }

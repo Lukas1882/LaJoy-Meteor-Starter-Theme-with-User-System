@@ -1,33 +1,7 @@
 if (Meteor.isServer) {
     Meteor.methods({
-        //isUserExist: function (username) {
-        //    check(username, String);
-        //
-        //    if (!this.userId) {
-        //        throw new Meteor.Error(401, 'you must be logged in!');
-        //    }
-        //
-        //    try {
-        //        if (Meteor.users.findOne({username: username})) {
-        //            // this  username is not valid.
-        //            return false;
-        //        } else {
-        //            // this username is valid.
-        //            return true;
-        //        }
-        //    } catch (e){
-        //        throw new Meteor.Error(500, e);
-        //    }
-        //},
-
-
         isEmailExist: function (email) {
             check(email, String);
-
-            //if (!this.userId) {
-            //    throw new Meteor.Error(401, 'you must be logged in!');
-            //}
-
             try {
                 if (Accounts.findUserByEmail(email)) {
                     // this  username is not valid.
@@ -40,7 +14,6 @@ if (Meteor.isServer) {
                 throw new Meteor.Error(500, e);
             }
         },
-
 
         addAccount: function (username,email,password) {
             check(username, String);
@@ -56,7 +29,7 @@ if (Meteor.isServer) {
                     password: password
                 });
                 // Send the Confirmation Email
-                Meteor.call('sendEmail', email, 'test@lyl.com', 'Hello World, '+ username, 'This is a test of Email, Please confirme your email');
+                Meteor.call('sendEmail', email, 'test@lyl1.com', 'Hello World, '+ username, 'This is a test of Email, Please confirme your email');
                 return true;
             }
         }

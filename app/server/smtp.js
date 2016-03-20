@@ -1,3 +1,3 @@
 Meteor.startup(function () {
-    process.env.MAIL_URL = 'smtp://leaot:1qaz@WSX@smtp.sendgrid.net:587';
+    process.env.MAIL_URL = 'smtp://[username]:[password]@smtp.sendgrid.net:587';
 });
